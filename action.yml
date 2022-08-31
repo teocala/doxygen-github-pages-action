@@ -33,6 +33,10 @@ runs:
     - name: Install Doxygen
       run: sudo apt-get install doxygen -y
       shell: bash
+    
+    - name: Install Graphviz
+      run: sudo apt-get install graphviz
+      shell: bash
 
     - name: Generate Doxygen Documentation
       run: doxygen ${{ inputs.config_file }}
